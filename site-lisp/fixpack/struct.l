@@ -1,4 +1,4 @@
-;;; -*- mode: lisp; package: lisp -*-
+;;; -*- mode: lisp; package: system -*-
 ;;;
 ;;; fixpack/struct.l
 ;;;
