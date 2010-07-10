@@ -5,6 +5,8 @@
 
 ;;; Code:
 
+(require "struct")
+
 (in-package :system)
 
 ;;;
