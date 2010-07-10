@@ -26,5 +26,6 @@
        (si:*fset ,$symbol ,$function)
        ,$function)))
 
+(provide "fixpack/setf-symbol-function")
 
 ;;; fixpack/setf-symbol-function.l ends here.
