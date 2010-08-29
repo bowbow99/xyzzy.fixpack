@@ -8,6 +8,8 @@
 (require "fixpack/struct")
 (require "fixpack/setf-symbol-function")
 
+(require "fixpack/typespec-cons")
+
 (provide "fixpack")
 
 ;;; fixpack.l ends here.
