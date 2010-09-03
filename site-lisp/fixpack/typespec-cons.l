@@ -27,9 +27,15 @@
   (remprop 'cons 'si::type-predicate))
 
 (si::defpred cons (object r)
-  (and (consp object)
-       (typep (car object) (car r))
-       (typep (cdr object) (cdr r))))
+  (macrolet ((%typep (obj spec)
+               `(or (eq ,spec '*) (typep ,obj ,spec))))
+    (case (list-length r)
+      (0 (consp object))
+      (1 (and (consp object)
+              (%typep (car object) (car r))))
+      (2 (and (consp object)
+              (%typep (car object) (car r))
+              (%typep (cdr object) (cadr r)))))))
 
 (provide "fixpack/typespec-cons")
 
