@@ -82,4 +82,6 @@
                (setf (get ',name 'lisp::type-documentation) ,doc))
              (define-condition-accessors ,name nil)))))))
 
+(provide "fixpack/condition")
+
 ;;; fixpack/condition.l ends here
