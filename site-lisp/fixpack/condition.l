@@ -75,14 +75,11 @@
                           ,(if (and (or (consp report)
                                         (symbolp report))
                                     (not (eq report nil)))
-                             `#',report
+                             `',report
                              report)
                           ,important)))
                (setf (get ',name 'structure-definition) ,def)
                (setf (get ',name 'lisp::type-documentation) ,doc))
              (define-condition-accessors ,name nil)))))))
-
-
-
 
 ;;; fixpack/condition.l ends here
