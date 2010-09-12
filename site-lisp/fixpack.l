@@ -6,6 +6,7 @@
 ;;; Code:
 
 (require "fixpack/struct")
+(require "fixpack/condition")
 (require "fixpack/setf-symbol-function")
 
 (require "fixpack/typespec-eql")
