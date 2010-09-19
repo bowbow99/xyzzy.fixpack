@@ -8,6 +8,7 @@
 (require "fixpack/struct")
 (require "fixpack/condition")
 (require "fixpack/setf-symbol-function")
+(require "fixpack/type-of")
 
 (require "fixpack/typespec-eql")
 (require "fixpack/typespec-cons")
