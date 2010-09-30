@@ -19,12 +19,9 @@
 ;;;
 
 (defsetf symbol-function (symbol) (new-function)
-  (let (($symbol (gensym))
-        ($function (gensym)))
-    `(let ((,$symbol ,symbol)
-           (,$function ,new-function))
-       (si:*fset ,$symbol ,$function)
-       ,$function)))
+  `(progn
+     (si:*fset ,symbol ,new-function)
+     ,new-function))
 
 (provide "fixpack/setf-symbol-function")
 
